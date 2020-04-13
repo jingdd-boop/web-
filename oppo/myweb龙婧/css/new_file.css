@@ -1,0 +1,406 @@
+
+*{
+    margin: 0;
+    padding: 0;
+	font-size:14px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+
+    color:#666;
+    text-decoration: none;
+}
+.left{
+    float: left;
+
+}
+.right{
+    float: right;
+}
+/* 测试部分 */
+#top,#header,#nav,#banner,#star,#accessory,#world,#serve,#after_sale,#footer{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid #000; */
+    
+}
+.container{
+	width:1200px;
+	/* border:1px solid #f00; */
+	margin:0px auto;
+	
+}
+
+#top{
+	height:5px;
+	background-color:#00aa00;
+}
+/*设置头部样式*/
+#header{
+	height:30px;
+	background-color:#001900;
+}
+#header .xlwb{
+	color:#fff;
+}
+#header .txwb{
+	color:#aaaaff;
+}
+
+#header .tel{
+	color:#00aa7f;
+}
+#header .header_left div{
+	margin:5px 10px 0px;
+	float:left;
+}
+#header ul li{
+	margin:5px 10px 0px;
+	float:left;
+}
+#header li a{
+	color:#ff007f;
+	font-size:15px;
+	border-right:1px solid #ff007f;
+	padding-right: 10px; 
+	
+}
+/*设置导航栏样式*/
+#nav{
+	height:90px;
+	background-color:#fafafa;
+}
+#nav .logo{
+	font-size:50px;
+	color:#00aa00;
+}
+#nav li{
+	float:left;
+	margin:0px 15px;
+	line-height:90px;
+}
+#nav li a:{
+	color:#550000;
+	font-weight:bold;
+}
+#nav li a:hover{
+	color:#00aa00;
+	font-weight:bold;
+}
+/*设置明星机型*/
+#star{
+	height:700px;
+	background-color:#fafafa;
+}
+#star ul{
+	width:1280px;
+	margin:10px 48px;
+}
+#star .star_top{
+	text-align:center;
+	margin:10px;
+}
+#star li{
+	width:250px;
+	/* border:1px solid #000; */
+	float:left;
+	border-bottom:4px solid #d1e1e1;
+	transition:all .3s;
+}
+#star li:hover{
+	border-bottom:4px solid #00bf00;
+	transform:translatey(-10px);
+}
+#star li img{
+	width:260px;
+	
+}
+#star li h2{
+	text-align:center;
+	margin-top:10px;
+}
+#star li p{
+	text-align:center;
+	margin:10px 0px;
+	font-size:12px;
+	color:#646464;
+}
+#star .money{
+	color:#00c200;
+	font-size:14px;
+}
+#star .line{
+	width:0px;
+	height:489px;
+	border-left:1px solid #00ffff;
+	margin:0px 15px;
+}
+/* 配件功能 */
+#accessory{
+	height:950px;
+	background-color:#fafafa;
+	overflow: hidden;
+}
+#accessory .acc_top{
+	text-align:center;
+	margin:20px 0px;
+}
+#accessory .acc_main{
+	width:1100px
+	margin:10px auto;
+	
+}
+#accessory .acc_left{
+	width:540px;
+	/* border:2px solid #000; */
+	height:950px;
+}
+#accessory .acc_left>div{
+	float:left;
+	border-bottom:3px solid #e3e3e3;
+	margin:10px;
+	transition:all .3s;
+}
+#accessory .acc_left>div:hover{
+	border-bottom:3px solid #00bf00;
+	transform:translatey(-10px);
+}
+#accessory .acc_left img{
+	width:250px;
+}
+#accessory .acc_left>div:last-child img{
+	width:520px;
+}
+#accessory .acc_all{
+	width:250px;
+	height:250px;
+	border:3px solid #e3e3e3;
+	background-color:#fff;
+	padding:20px;
+	box-sizing:border-box;
+}
+#accessory .acc_all p:first-child{
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	border-bottom:2px solid #e3e3e3;
+	padding-bottom:10px;
+}
+#accessory .acc_all li{
+	float:left;
+	width:100px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	
+}
+#accessory .acc_all li:hover{
+	color:#00bf00;
+	
+}
+#accessory .acc_all .line{
+	width:150px;
+	height:0;
+	border:1px solid #e3e3e3;
+	clear:both;
+	margin:15px auto;
+}
+#accessory .acc_all p:last-child{
+	text-align:center;
+	font-size:16px;
+}
+#accessory .acc_all p:last-child:hover{
+	color:#00bf00;
+}
+#accessory .acc_right{
+	width:540px;
+	
+}
+#accessory .acc_right div{
+	float:left;
+	margin:10px;
+	border-bottom:3px solid #e3e3e3;
+	transition:all .3s;
+}
+#accessory .acc_right div:hover{
+	border-bottom:3px solid #00bf00;
+	transform:translatey(-10px);
+}
+#accessory .acc_right img{
+	width:250px;	
+}
+#accessory .acc_right div:first-child img{
+	width:520px;
+	height:250px;
+}
+#accessory .acc_right div:last-child img{
+	height:241px
+}
+/* 设置精选琥珀部分样式 */
+#world{
+	height:700px;
+	/* clear: both; */
+	overflow: hidden;
+	background-color:#fafafa;
+}
+#world .world_top{
+	text-align: center;
+	margin: 20px 0px;
+}
+#world .world_main{
+	width: 1200px;
+	margin: 10px auto;
+}
+#world .world_left{
+	width: 800px;
+}
+#world .world_left div{
+	float: left;
+	margin: 10px;
+	border-bottom: 3px solid #e3e3e3;
+	transition:all .3s;
+}
+#world .world_left div:hover{
+	border-bottom: 3px solid #00aa00;
+	transform:translatey(-10px);
+}
+#world .world_right{
+	width: 400px;
+	height: 566px;
+	background-color:#fff;
+	margin-top:10px;
+}
+#world .world_right img{
+	height: 100px;
+}
+#world .world_right .world_title{
+	height: 60px;
+}
+#world .world_right .world_title div{
+	width: 200px;
+	height: 60px;
+	background-color: #E3E3E3;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	border-top:3px solid #E3E3E3;
+	
+}
+#world .world_right .world_title div:hover{
+	border-top:3px solid #00aa00;
+	background-color: #fff;
+}
+#world .world_right ul li{
+	background-color:#fafafa;
+	margin: 20px 10px;
+}
+#world .world_right dl{
+	width: 380px;
+	height: 100px;
+	position: relative;
+	/* padding: 10px ; */
+	box-sizing: border-box;
+	
+}
+#world .world_right dl dt{
+	position: absolute;
+	top:0px;
+	left:10px;
+}
+#world .world_right dl dd{
+	position: absolute;
+	top:20px;
+	left:140px;
+}
+/* 服务类 */
+#serve{
+	height: 100px;
+	background-color: #fff;
+}
+#serve dl{
+	width: 200px;
+	height: 100px;
+	/* border: 1px solid #000; */
+	position: relative;
+	
+}
+#serve dl .dd1{
+	position: absolute;
+	margin: 20px auto;
+	font-weight: bold;
+}
+#serve dl .dd2{
+	position: absolute;
+	
+	margin: 50px auto;
+	color: #b1b1b1;
+	font-size: 12px;
+}
+#serve li{
+	float: left;
+	margin: 0px 10px;
+	transition: all .3s;
+}
+#serve li:hover{
+	transform: translateY(-10px);
+}
+#serve ul{
+	
+	width: 1110px;
+	margin: 0px auto;
+	height: 99px;
+	border-bottom: 1px solid #a2a2a2;;
+}
+/* 售后服务 */
+#after_sale{
+	height:160px;
+	background-color: #fff;
+}
+#after_sale ul{
+	width: 1110px;
+	margin: 0px auto;
+	
+}
+#after_sale ul li{
+	width: 140px;
+	float: left;
+	text-align: center;
+	margin: 5px 20px;
+	
+}
+#after_sale ul li a:hover{
+	color:#00aa00;
+	font-weight:bold;
+}
+#after_sale ol>li{
+	line-height: 30px;
+}
+#after_sale ol>li:first-child a{
+	font-size:16px;
+	font-weight: bold;
+}
+/* 页面底部 */
+#footer{
+	height: 40px;
+	background-color: #1f1f1f;
+}
+#footer img{
+	margin-left: 20px;
+}
+#footer p{
+	line-height: 40px;
+	
+}
+#footer p span{
+	color: #ffff7f;
+	margin: 10px 430px 10px 20px;
+}
+#footer p a{
+	color: #fff;
+	margin: 0px 10px;
+}
+#footer p a:hover{
+	color: #00AA00;
+}
