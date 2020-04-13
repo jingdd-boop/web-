@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D旋转相册</title>
+    <style type="text/css">
+    body{
+        margin: 0px;
+        background: #000;
+        
+    }
+    #perspective{
+        perspective: 800px;
+    }
+    #wrap{
+        position: relative;
+        width: 108px;
+        height: 144px;
+       
+        margin: 300px auto;
+        transform-style: preserve-3d;
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+    #wrap img{
+        position: absolute;
+        width: 108px;
+        height: 144px;
+    }
+    </style>
+</head>
+<body>
+    <div id="perspective">
+        <div id="wrap">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+            <img src="img/6.jpg" alt="">
+            <img src="img/7.jpg" alt="">
+            <img src="img/8.jpg" alt="">
+            <img src="img/9.jpg" alt="">
+            <img src="img/10.jpg" alt="">
+            <img src="img/11.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+var oImg = document.getElementsByTagName("img");
+var length = oImg.length;
+var deg = 360/length;
+var oWrap = document.getElementById("wrap");
+
+window.onload = function(){
+    Array.prototype.forEach.call(oImg,function(ele,index,self){
+    ele.style.transform = "rotateY("+deg*index+"deg) translateZ(350px)";
+    ele.style.transition = "1s "+ (length-index)*0.2+"s";
+});
+}
+var newX,newY,lastX,lastY,minusX,minusY,rotX=-20,rotY=0;
+document.onmousedown = function(event){
+    lastX = event.clientX;
+    lastY= event.clientY;
+
+    this.onmousemove = function(event){
+        //鼠标移动事件
+        newX = event.clientX;
+        newY = event.clientY;
+
+        minusX = newX-lastX;
+        minusY = newY-lastY;
+
+        rotX -=minusY;
+        rotY +=minusX;
+
+        oWrap.style.transform = "rotateX("+rotX+"deg) rotateY("+rotY+"deg)";
+
+
+        lastX = newX;
+        lastY = newY;
+
+
+    }
+    this.onmouseup = function(event){
+        //鼠标松开事件清除
+        
+        this.onmousemove = null;
+    }
+}
+
+</script>
+</html>
