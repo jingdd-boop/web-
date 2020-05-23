@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+
+.top{
+    padding-top: 0;
+    width: 100%;
+    height: 550px;
+    background-image: url('http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1108/30/c11/8819767_8819767_1314698775926.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 99.9%;
+    /* background: linear-gradient(top,white,rgb(231, 134, 202));
+    background: -webkit-linear-gradient(top,white,rgb(231, 134, 202));
+    background: -moz-linear-gradient(top,white,rgb(231, 134, 202));   */
+}
+.top_face{
+    margin: 0px auto;
+    height: 100px;
+    width: 100px;
+   
+}
+.top_face img{
+    margin-top: 50px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 2px rgb(196, 184, 184);
+    transition: all 1s;
+}
+.top_face img:hover{
+    transform: scale(1.5);
+}
+.top_name{
+    
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+}
+.top_name p{
+    padding-top: 60px;
+    padding-left: 30px;
+    font-family: cursive;
+    font-size: medium;
+    color: ivory;
+}
+.top_found{
+    width: 40px;
+    height: 50px;
+    margin: 10px auto;
+    padding-bottom: 50px;
+}
+.top_found img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+   margin-top: 0;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.top_nav{
+    width: 500px;
+    height: 80px;
+    margin: 10px auto;
+   
+    padding-left: 160px;
+}
+.top_nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: rgb(230, 211, 227);
+    margin-right: 20px;
+    padding-left: 5px;
+    transition: all 1s;
+       
+}
+.top_nav img:hover{
+    transform: scale(1.5);
+}
+
+.bottom{
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left:0px;
+     
+}
+.bottom .qq1 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+}
+.bottom .qq1::after{
+    content: url('images/qq11.jpg');
+    position: absolute;
+    right: -28px;
+    top: -135px;
+    z-index: 99;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #0095ba;
+    border-radius: 4px;
+    transform-origin: top right;
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.bottom:hover::after{
+    transform:scale(1);
+    opacity: 1;
+}
+.bottom .wx1 {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    padding-left: 20px;
+}
+
+
+
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    
+    
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    
+}
+
+.overlay a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.bt{
+   
+    /* background-color: burlywood; */
+    padding-left: 1460px;
+    padding-top: 10px;
+    background: rgb(251, 251, 253);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
